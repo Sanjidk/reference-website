@@ -4,7 +4,7 @@ import Navbar from './components/Shared/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="max-w-5xl mx-auto px-5 text-white">
       <Navbar></Navbar>
       <Introduction></Introduction>
     </div>
