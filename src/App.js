@@ -1,4 +1,5 @@
 import './App.css';
+import About from './components/Main/About';
 import Categories from './components/Main/Categories';
 import Introduction from './components/Main/Introduction';
 import Photography from './components/Main/Photography';
@@ -15,6 +16,7 @@ function App() {
       <Categories></Categories>
       <Photography></Photography>
       <Tools></Tools>
+      <About></About>
     </div>
   );
 }
