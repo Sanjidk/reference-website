@@ -3,6 +3,7 @@ import Categories from './components/Main/Categories';
 import Introduction from './components/Main/Introduction';
 import Photography from './components/Main/Photography';
 import Skill from './components/Main/Skill';
+import Tools from './components/Main/Tools';
 import Navbar from './components/Shared/Navbar';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Skill></Skill>
       <Categories></Categories>
       <Photography></Photography>
+      <Tools></Tools>
     </div>
   );
 }
