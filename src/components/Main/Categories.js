@@ -3,14 +3,14 @@ import React from 'react';
 const Categories = () => {
     return (
         <div className='bg-back-pic bg-no-repeat bg-cover'>
-            <div className='max-w-5xl mx-auto my-4'>
-                <h1 className='text-4xl font-bold lg:mt-28 mb-8'>  Categories <span className='text-3xl text-blue-400'> +</span> </h1>
-                <div className='grid grid-cols-3 gap-8'>
+            <div className='max-w-5xl mx-auto px-5 my-4'>
+                <h1 className='text-4xl font-bold mt-28 mb-8'>  Categories <span className='text-3xl text-blue-400'> +</span> </h1>
+                <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4'>
                     <div className=' p-5'>
                         <h1 className='font-bold text-2xl text-green-400 lg:mb-4'> Landscape Photography</h1>
                         <h3 className='my-2 font-serif'>Good Camera</h3>
                         <h3 className='my-2 font-serif'>Good Lighting</h3>
-                        <h3 className='my-2 font-serif'>Good Lens</h3>
+                        <h3 className='my-2 font-serif'>Good Len</h3>
                         <h3 className='my-2 font-serif'>Good Tripod</h3>
                     </div>
                     <div className=' p-5'>

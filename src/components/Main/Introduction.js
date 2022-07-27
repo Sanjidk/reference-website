@@ -3,7 +3,7 @@ import sanjid from '../../img/sanju.png';
 
 const Introduction = () => {
     return (
-        <div class="hero-content flex-col lg:flex-row-reverse max-w-5xl mx-auto px-5">
+        <div class="flex flex-col lg:flex-row-reverse items-center gap-8 max-w-5xl mx-auto px-5">
                         <img src={sanjid} alt="" />
 
             <div>
