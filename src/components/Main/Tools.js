@@ -1,8 +1,15 @@
-import React from 'react';
+import Aos from 'aos';
+import React, { useEffect } from 'react';
+import "aos/dist/aos.css";
+
 
 const Tools = () => {
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, [])
+
     return (
-        <div className='max-w-5xl mx-auto px-5 my-8'>
+        <div data-aos="fade-right" className='max-w-5xl mx-auto px-5 my-8'>
             <div className='flex justify-between mt-28 mb-8'>
                 <h1 className='text-4xl font-bold'> Tools <span className='text-3xl text-green-400'> --- </span></h1>
                 <button class="underline decoration-1 underline-offset-8 hover:bg-slate-900 p-1 hover:translate-x-0.5">Online View</button>

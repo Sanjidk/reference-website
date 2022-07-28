@@ -1,14 +1,20 @@
-import React from 'react';
-import bubble from '../../img/movie.mov';
+import React, { useEffect } from 'react';
+import './About.css';
+import bubble from '../../img/bubble.png';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const About = () => {
-    return (
-        <div className='relative h-full overflow-hidden'>
-            <video autoPlay loop muted className='w-full absolute -z-0'  >
-                <source src={bubble} type="video/mp4" />
-            </video>
 
-            <div className="flex flex-col lg:flex-row lg:gap-20 relative z-10 lg:mt-40 mt-16 max-w-5xl mx-auto px-5">
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, [])
+
+
+
+    return (
+        <div className='relative -z-0'>
+            <div data-aos="fade-up" className="flex flex-col lg:flex-row lg:gap-20 lg:mt-40 mt-16 max-w-5xl mx-auto px-5">
                 <div className='w-96'>
                     <p className="text-red-500 font-bold">About Me</p>
                     <h1 className="text-xl font-bold mt-4">A Wildlife Photographer,</h1>
@@ -23,6 +29,19 @@ const About = () => {
                     </p>
                 </div>
             </div>
+
+            <div data-aos="fade-up" className='bubbles'>
+                <img src={bubble} alt="" />
+                <img src={bubble} alt="" />
+                <img src={bubble} alt="" />
+                <img src={bubble} alt="" />
+                <img src={bubble} alt="" />
+                <img src={bubble} alt="" />
+                <img src={bubble} alt="" />
+            </div>
+
+
+
         </div>
     );
 };

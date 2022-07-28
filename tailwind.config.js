@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         'back-pic': "url('/src/img/pic.png')",
+        'back-cam': "url('/src/img/camera2.jpg')",
       }),
     },
   },
